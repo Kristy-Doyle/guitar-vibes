@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Guitar Vibes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/script.js"></script> 
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+            <img src="images/guitar.png" alt="Guitar Vibes logo" class="logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./media.html">Media</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1 class="form-header">Contact Guitar Vibes</h1>
+
+        <h2 class="form-title">Let's Connect 🎸</h2>
+<p class="form-intro">Questions, feedback, or jam session invites? Drop me a message below!</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required aria-required="true" pattern="\d{10}" title="Enter a 10-digit phone number">
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required aria-required="true"></textarea>
+
+            <button type="submit">Submit</button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guitar Vibes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
